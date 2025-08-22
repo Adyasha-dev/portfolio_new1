@@ -48,14 +48,22 @@ const Navbar = () => {
         </button>
       </nav>
       {isOpen && (
-        <ul className="lg:hidden  h-[90dvh]  text-white flex flex-col bg-black items-center gap-3 ">
-          <li>Home</li>
-          <li>About</li>
-          <li>Skill</li>
-          <li>Services</li>
-          <li>Portfolio</li>
-          <li>Contact</li>
-        </ul>
+        <div className=" relative z-50 w-full h-full  flex justify-between ">
+          <div className="bg-white h-10 w-10 rounded-full  flex justify-center items-center ">
+            <span className="text-lg text-black  font-bold">AB</span>
+          </div>
+          <div>
+            <RxHamburgerMenu className="text-white text-3xl" />
+          </div>
+          <ul className="lg:hidden w-full  h-[100dvh] top-0 z-50 absolute  text-white flex flex-col bg-black items-center gap-3 ">
+            <li>Home</li>
+            <li>About</li>
+            <li>Skill</li>
+            <li>Services</li>
+            <li>Portfolio</li>
+            <li>Contact</li>
+          </ul>
+        </div>
       )}
     </>
   );

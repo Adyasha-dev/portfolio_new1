@@ -7,6 +7,7 @@ import Services from "./pages/Services";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import { Routes, Route } from "react-router-dom";
+import Footer from "./component/Footer";
 function App() {
   return (
     <>
@@ -20,6 +21,7 @@ function App() {
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </>
   );
 }
