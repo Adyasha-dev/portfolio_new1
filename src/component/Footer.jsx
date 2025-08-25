@@ -1,9 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
 import { AiTwotoneMail } from "react-icons/ai";
+import { Link } from "react-scroll";
 
 const Footer = () => {
   return (
@@ -24,12 +24,12 @@ const Footer = () => {
         </div>
         <div className="w-auto h-auto  flex flex-col items-center justify-center text-white ">
           <p className="text-2xl font-semibold">Quick Links</p>
-          <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
-          <Link to="/skill">Skill</Link>
-          <Link to="/services">Services</Link>
-          <Link to="/portfolio">Portfolio</Link>
-          <Link to="/contact">Contact</Link>
+          <Link to="home">Home</Link>
+          <Link to="about">About</Link>
+          <Link to="skill">Skill</Link>
+          <Link to="services">Services</Link>
+          <Link to="portfolio">Portfolio</Link>
+          <Link to="contact">Contact</Link>
         </div>
         <div className="w-auto h-auto  flex flex-col  items-center  gap-4">
           <p className="font-semibold text-2xl  text-white">Contact</p>
