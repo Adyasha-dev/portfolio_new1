@@ -43,12 +43,12 @@ const Navbar = () => {
           </li>
           <li className="font-semibold text-3xl lg:text-lg hover:text-indigo-400 hover:underline underline-offset-4 transition">
             <Link
-              to="services"
+              to="experience"
               smooth={true}
               duration="500"
               className="cursor-pointer"
             >
-              Services
+              Experience
             </Link>
           </li>
           <li className="font-semibold text-3xl lg:text-lg hover:text-indigo-400 hover:underline underline-offset-4 transition">
@@ -73,9 +73,11 @@ const Navbar = () => {
           </li>
         </ul>
         <div className="hidden lg:flex bg-white h-8 w-36  items-center justify-center shadow-md hover:bg-indigo-400 transition transform hover:scale-105 ">
-          <button className=" text-black  text-lg  font-semibold rounded-lg ">
-            Download CV
-          </button>
+          <a href="/adyashaBiswal23.pdf">
+            <button className=" text-black  text-lg  font-semibold rounded-lg ">
+              Download CV
+            </button>
+          </a>
         </div>
         {/*mobile humburgur menu */}
         <button

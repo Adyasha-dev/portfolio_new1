@@ -1,7 +1,9 @@
 import React from "react";
 import aboutph from "../assets/aboutph.png";
 import { FaLaptopCode, FaServer, FaCode } from "react-icons/fa";
-
+import { Repeat } from "lucide-react";
+// eslint-disable-next-line no-unused-vars
+import { motion } from "framer-motion";
 const About = () => {
   return (
     <section
@@ -14,7 +16,12 @@ const About = () => {
       {/*left Div */}
       <div className="w-full h-full flex flex-col lg:flex-row gap-20 p-6 ">
         <div className="h-full w-full  lg:w-2/5  flex justify-center items-center">
-          <img src={aboutph} alt="About" />
+          <motion.img
+            src={aboutph}
+            alt="About"
+            animate={{ y: [0, -40, 0] }}
+            transition={{ duration: 3, repeat: Infinity }}
+          />
         </div>
         {/* right div */}
         <div className="h-full w-full  lg:w-3/5    space-y-4 ">
