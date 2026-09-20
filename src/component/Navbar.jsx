@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { RxCross2 } from "react-icons/rx";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Link } from "react-scroll";
+
 const Navbar = () => {
   const [isOpen, setIsopen] = useState(false);
   return (
@@ -73,7 +74,7 @@ const Navbar = () => {
           </li>
         </ul>
         <div className="hidden lg:flex bg-white h-8 w-36  items-center justify-center shadow-md hover:bg-indigo-400 transition transform hover:scale-105 ">
-          <a href="/adyashaBiswal23.pdf">
+          <a href="/AdyashaResume.pdf">
             <button className=" text-black  text-lg  font-semibold rounded-lg ">
               Download CV
             </button>
@@ -91,9 +92,10 @@ const Navbar = () => {
           )}
         </button>
       </nav>
+      {/*if isopen is true then it will always render this part  */}
       {isOpen && (
         <div className=" relative z-50 w-full h-full  flex justify-between ">
-          <div className="bg-white h-10 w-10 rounded-full  flex justify-center items-center ">
+          <div className=" h-10 w-10 rounded-full   flex justify-center items-center  ">
             <span className="text-lg text-black  font-bold">AB</span>
           </div>
           <div>
