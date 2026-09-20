@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import adya from "../assets/adya.jpg";
+import adya from "../assets/adya.png";
 import { Link } from "react-scroll";
 import { Typewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
